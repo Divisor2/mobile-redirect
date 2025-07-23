@@ -1,0 +1,21 @@
+name = "mobile-redirect"
+main = "src/worker.js"
+compatibility_date = "2024-06-01"
+
+# Если хочешь, чтобы при автодеплое сразу ставились маршруты:
+# (Укажи только те зоны, которые действительно уже в аккаунте. Иначе импорт может ругаться.)
+# routes = [
+#   { pattern = "melbet.sbs/*", zone_name = "melbet.sbs" }
+# ]
+
+# Базовые переменные можно задать здесь и при необходимости раскомментировать.
+
+[vars]
+# URL, на который будет перенаправляться мобильный RU-трафик по умолчанию
+FALLBACK_URL = "https://2win.click/tds/go.cgi?4&bonus=bet"
+# Страна, трафик из которой будет редиректиться
+REDIRECT_COUNTRY = "RU"
+# Отключить редирект полностью
+DISABLE_RU_MOBILE_REDIRECT = "false"
+# Считать iPad мобильным устройством
+INCLUDE_IPAD = "false"
